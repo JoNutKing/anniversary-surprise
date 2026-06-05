@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;600;700&family=Kanit:wght@300;400;500;600&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Prompt', 'Kanit', system-ui, -apple-system, sans-serif;
+}
+
+:root {
+  --text: #4A4A4A;
+  --text-h: #D96B84;
+  --bg: #FFE5EC;
+  --accent: #D96B84;
+  --sans: 'Prompt', 'Kanit', system-ui, -apple-system, sans-serif;
+  
+  font-family: var(--sans);
+  font-size: 16px;
+  color: var(--text);
+  background-color: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, var(--bg) 0%, #FFC2D1 100%);
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-h);
+  font-family: 'Prompt', sans-serif;
+}
+
+button {
+  font-family: 'Prompt', sans-serif;
+}
